@@ -1,0 +1,178 @@
+html {
+	font-family: 'Roboto';
+	font-style: medium;
+	font-weight: 500 !important;
+	font-size: 14px;
+	line-height: 21px;
+	color: #6E6E6E;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.green--btn a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* USER STYLES */
+
+.main__content {
+	background-color: #F8FAFF;
+	height: 100vh;
+}
+
+.logo {
+	padding: 30px 149px 45px 25px;
+}
+
+.nav__item:hover {
+	color: #343434;
+}
+
+.nav__item {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	color: #7D7D7D;
+	position: relative;
+}
+
+.nav-item::after {
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 49px;
+	left: 0;
+	background: transpartent;
+	transition: background .4s;
+}
+
+.nav-item:hover:after {
+	background: #6666CC;
+	box-shadow: 0px 2px 10px rgba(102, 102, 204, 0.67);
+}
+
+.nav__links {
+	display: flex;
+	align-items: center;
+}
+
+.nav__link {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 500;
+	color: #656565;
+}
+
+.button {
+	background: #55C97B;
+	border-color: #55C97B;
+	padding: 7px 16px;
+}
+
+.content__shop {
+	margin-bottom: 25.5px;
+}
+
+.shop__title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 21px;
+	color: #343434;
+}
+
+.shops__items {
+	padding: 27px 35px;
+	background: #FFFFFF;
+	box-shadow: 0px 11px 21px rgba(40, 40, 40, 0.07);
+	border-radius: 10px;
+}
+
+.user__info {
+	display: flex;
+	align-items: center;
+	max-width: 256px;
+	height: 65px;
+	color: #7D7D7D;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 16px rgba(136, 167, 245, 0.18);
+	border-radius: 10px;
+	padding: 22px 12px;
+	font-weight: 500;
+}
+
+.user__img {
+	width: 51px;
+	height: 51px;
+	background: #FFFFFF;
+	border: 3px solid #D9D9D9;
+	border-radius: 50%;
+	margin: 0px 10px;
+}
+
+.user__name {
+	margin-right: 16px;
+}
+
+button img {
+	margin-right: 12px;
+	vertical-align: middle;
+}
+
+.avatar {
+	position: relative;
+}
+
+.message {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 65px;
+	height: 65px;
+	border: 1px solid #d4d4d4;
+	background: rgba(0, 0, 0, 0.0001);
+	border-radius: 10px;
+	margin-right: 16px;
+	position: relative;
+}
+
+.message::before {
+	content: "";
+	display: block;
+	width: 13px;
+	height: 13px;
+	background-color: red;
+	border: 3px solid white;
+	border-radius: 50%;
+	position: absolute;
+	top: 35%;
+	right: 30%;
+	transform: translate(50%, -50%);
+}
+
+.icon--img {
+	margin-right: 10px;
+}
+
+table {
+	line-height: 60px;
+	font-weight: 500;
+}
+
+tr {
+	vertical-align: middle;
+}
+
+tr.tr:first-child, tr:last-child {
+	border-color: #fff;
+}
+
+.green--btn {
+	background-color: #55C97B;
+}
+
+.grey--btn {
+	background-color: #B1B1B1;
+	border: none;
+}
+
