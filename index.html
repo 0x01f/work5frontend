@@ -121,8 +121,7 @@
               class="btn btn-success d-flex align-items-center green--btn button mb-5"
               type="button"
               class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#createShop"
+              id="myButton"
             >
               <img src="/images/+.png" alt="" />
               Создать свой магазин
@@ -204,58 +203,60 @@
         </div>
       </div>
     </div>
-    <div class="modal" tabindex="-1" id="createShop" aria-labelledby="createShopLabel">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5>Создать магазин</h5>
+    <div id="myPopup">
+      <span id="closePopup">&times;</span>
+      <div class="content--popup">
+        <h5 class="h5">Создать магазин</h5>
+        <div class="row">
+          <div class="col col-md-5">
+            <h6 class="h6">Шаблон</h6>
+            <select class="form-select" aria-label="Пример выбора по умолчанию">
+              <option selected>Стандартный</option>
+              <option value="1">Один</option>
+              <option value="2">Два</option>
+              <option value="3">Три</option>
+            </select>
           </div>
-          <div class="modal-body">
-              <div class="row">
-                <div class="col">
-                  <h6>Шаблон</h6>
-                  <select class="form-select" aria-label="Пример выбора по умолчанию">
-                    <option selected>Откройте это меню выбора</option>
-                    <option value="1">Один</option>
-                    <option value="2">Два</option>
-                    <option value="3">Три</option>
-                  </select>
-                </div>
-                <div class="col">
-                <h6>Цветовая схема</h6>
-                  <select class="form-select" aria-label="Пример выбора по умолчанию">
-                    <option selected>Откройте это меню выбора</option>
-                    <option value="1">Один</option>
-                    <option value="2">Два</option>
-                    <option value="3">Три</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Домен</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div class="mb-3">
-                    dasdasdsad
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary align-items-center grey--btn">
-              Отмена
-            </button>
-            <button
-              class="btn btn-success align-items-center me-3 button green--btn"
-            >
-              Создать
-            </button>
+          <div class="col col-md-2"></div>
+          <div class="col col-md-5">
+            <h6 class="h6">Цветовая схема</h6>
+            <select class="form-select" aria-label="Пример выбора по умолчанию">
+              <option selected>Классическая</option>
+              <option value="1">Один</option>
+              <option value="2">Два</option>
+              <option value="3">Три</option>
+            </select>
           </div>
         </div>
+        <div class="row">
+          <h6 class="h6">Домен</h6>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Например: ivangrozniy"
+              aria-label="Например: ivangrozniy"
+              aria-describedby="basic-addon2"
+            />
+            <span class="input-group-text" id="basic-addon2">.work5.ru</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-start align-items-center mb-3">
+          <div class="p-2 col-example">
+            <img src="/images/warning.svg" alt="" />
+          </div>
+          <div class="p-2 col-example">
+            В названии домена разрешены латиница и “-”, запрещается использовать
+            словосочетание Work 5. После создания магазина Вы сможете прикрутить
+            свой домен (например ivangrozniy.ru). Подробнее по <a href="#">ссылке</a>
+          </div>
+        </div>
+        <div class="mt-4">
+          <button class="btn btn-secondary align-items-center button grey--btn me-4"> Отмена</button>
+          <button class="btn btn-success align-items-center me-3 button green--btn"> Создать </button>
+        </di >
       </div>
     </div>
   </body>
   <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
-  <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
-  </body>
 </html>
