@@ -118,7 +118,12 @@
           <!-- Content -->
           <div class="content py-5">
             <button
-              class="btn btn-success d-flex align-items-center green--btn button mb-5">
+              class="btn btn-success d-flex align-items-center green--btn button mb-5"
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#createShop"
+            >
               <img src="/images/+.png" alt="" />
               Создать свой магазин
             </button>
@@ -199,5 +204,58 @@
         </div>
       </div>
     </div>
+    <div class="modal" tabindex="-1" id="createShop" aria-labelledby="createShopLabel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Создать магазин</h5>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                <div class="col">
+                  <h6>Шаблон</h6>
+                  <select class="form-select" aria-label="Пример выбора по умолчанию">
+                    <option selected>Откройте это меню выбора</option>
+                    <option value="1">Один</option>
+                    <option value="2">Два</option>
+                    <option value="3">Три</option>
+                  </select>
+                </div>
+                <div class="col">
+                <h6>Цветовая схема</h6>
+                  <select class="form-select" aria-label="Пример выбора по умолчанию">
+                    <option selected>Откройте это меню выбора</option>
+                    <option value="1">Один</option>
+                    <option value="2">Два</option>
+                    <option value="3">Три</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Домен</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div class="mb-3">
+                    dasdasdsad
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary align-items-center grey--btn">
+              Отмена
+            </button>
+            <button
+              class="btn btn-success align-items-center me-3 button green--btn"
+            >
+              Создать
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
   </body>
 </html>
